@@ -12,10 +12,25 @@ jobs:
               uses: actions/setup-java@v4
               with:
                 java-version: 17
-                distribution: 'temurin'
+                istribution: 'temurin'
                 cache: maven
             - name: build_spc
               run: mvn clean package
+
+    buildwith21:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: setup_java21
+              uses: actions/setup-java@v4
+              with:
+                java-version: 21
+                istribution: 'temurin'
+                cache: maven
+            - name: build_spc
+              run: mvn clean package
+
+
 
 
 
