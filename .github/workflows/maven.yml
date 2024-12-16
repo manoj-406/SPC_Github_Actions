@@ -7,8 +7,8 @@ jobs:
     buildwith17:
         runs-on: ubuntu-latest
         steps:
-            - name: maven
-            - uses: actions/checkout@v4
+            - name: build_spc
+            #   uses: actions/checkout@v4
               run: mvn clean package
 
 
