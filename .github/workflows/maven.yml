@@ -12,7 +12,7 @@ jobs:
               uses: actions/setup-java@v4
               with:
                 java-version: 17
-                istribution: 'temurin'
+                distribution: 'temurin'
                 cache: maven
             - name: build_spc
               run: mvn clean package
